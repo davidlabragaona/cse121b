@@ -69,7 +69,7 @@ document.querySelector("#getTotal").addEventListener("click", () => {
     else
         value = numericValue * 1;
 
-        total.textContent = value.toFixed(2);
+        total.textContent = `$ ${value.toFixed(2)}`;
 });
 
 /* ARRAY METHODS - Functional Programming */
