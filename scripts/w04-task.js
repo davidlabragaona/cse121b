@@ -68,8 +68,12 @@ const hobbies = myProfile.hobbies.forEach( x => {
 
 /* Places Lived DataList */
 myProfile.placesLived.forEach( (x) => {
-    const element = document.createElement("li");
-    element.innerHTML = `<dt>${x.place}</dt><dd>${x.length}</dd>`;
-    document.querySelector("#places-lived").appendChild(element);
+    const dtElement = document.createElement("dt");
+    dtElement.innerText = x.place;
+    const ddElement = document.createElement("dd");
+    ddElement.innerText = x.length;
+    const placesElement = document.querySelector("#places-lived");
+    placesElement.appendChild(dtElement);
+    placesElement.appendChild(ddElement);
 });
 
