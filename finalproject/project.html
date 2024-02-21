@@ -9,19 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="./styles/final.css">
 </head>
 
 <body>
     <nav>
         <ul id="menu">
             <li><a id="toggleMenu">&equiv;</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="w01-task.html">W1 Task</a></li>
-            <li><a href="w03-task.html" class="active">W3 Task</a></li>
-            <li><a href="w04-task.html">W4 Task</a></li>
-            <li><a href="w05-task.html">W5 Task</a></li>
-            <li><a href="project.html">Project</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../w01-task.html">W1 Task</a></li>
+            <li><a href="../w03-task.html">W3 Task</a></li>
+            <li><a href="../w04-task.html">W4 Task</a></li>
+            <li><a href="../w05-task.html">W5 Task</a></li>
+            <li><a href="project.html" class="active">Project</a></li>
         </ul>
     </nav>
     <header>
@@ -29,11 +29,10 @@
     </header>
     <main id="FinalProject">
         <section id="Dashboard">
-            <h2>Job application profile</h2>
+            <h2>Job applicant profile</h2>
             <article>
-                <h3>User</h3>
                 <div>
-                    <label for="username">Username</label>
+                    <label for="username">GitHub Username</label>
                     <input type="text" id="username" name="username">
                 </div>
                 <div>
@@ -42,6 +41,15 @@
             </article>
             <article id="userResults">
             </article>
+            <article id="userRepositories">
+            </article>
+            <div id="sort">
+                <select id="mySelect">
+                    <option value="asc">Asc.</option>
+                    <option value="desc">Desc.</option>
+                    <option value="date">Creation Date</option>
+                </select>
+            </div>
         </section>
     </main>
     <footer>

@@ -279,6 +279,87 @@ footer {
     margin: .5rem;
 }
 
+/* Final Project */
+#userResults {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: .5rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#userResults article {
+    height: 250px;
+    margin: .5rem auto;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#userResults img {
+    border-radius: 50%;
+    border: solid 5px white;
+    width: 250px;
+    height: auto;
+    box-shadow: 0 0 30px #777;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#userResults{
+    text-align: center;
+}
+
+#userRepositories h3 {
+    text-align: center;
+}
+
+#userRepositories article {
+    margin-bottom: 3em;
+}
+
+#userRepositories ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    list-style: none;
+    padding: 0;
+}
+
+#userRepositories li {
+    flex: 1 1 calc(33% - 10px);
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+#userRepositories li div {
+    text-align: left;
+}
+
+#userRepositories span {
+    font-size: smaller;
+    color: gray;
+}
+
+#userRepositories p {
+    font-size: smaller;
+    margin-top: .5em;
+    color: gray;
+}
+
+#sort {
+    height: 3em;
+    display: none;
+}
+
 /* Media Queries */
 @media only screen and (min-width: 32.5em) {
     nav ul {
