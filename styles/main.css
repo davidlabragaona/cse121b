@@ -279,6 +279,17 @@ footer {
     margin: .5rem;
 }
 
+.avatar {
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    border: 10px solid white;
+    height: 30%;
+    min-width: 30%;
+    margin: 0 auto;
+    box-sizing:content-box;
+}
+
 /* Media Queries */
 @media only screen and (min-width: 32.5em) {
     nav ul {
